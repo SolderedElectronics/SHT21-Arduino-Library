@@ -9,7 +9,7 @@ This repo contains Arduino library for SHT21 sensor. It also includes two exampl
 - Get Serial Number example: prints SHT21 hardcored Serial Number to Serial monitor
 
 ## Docs
-- [SHT21 breakout board by e-radionica.com] (https://e-radionica.com/en/usb-uart-adapter-with-cp2102-made-by-e-radionica.html)
+- [SHT21 breakout board by e-radionica.com] [breakout]
 
 ## How to use?
 Install as any Arduino library. Go to File -> Examples -> SHT21_Arduino_Library -> *choose your example* and use! 
