@@ -19,6 +19,6 @@ This product is open-source. Yay!
 For any tech questions, contact us at techsupport@e-radionica.com
 If you find an Issue, please open one at GitHub. If you can improve our product, fork us.
 
-e-radionica.com Team.
+e-r.io Team.
 
 [breakout]: https://e-radionica.com/en/sht21-humidity-and-temperature-sensor.html
