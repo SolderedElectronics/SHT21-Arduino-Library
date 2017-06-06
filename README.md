@@ -10,9 +10,10 @@ This repo contains Arduino library for SHT21 sensor. It also includes two exampl
 
 ## Docs
 - [SHT21 breakout board by e-radionica.com] [breakout]
+- [SHT21 breakout by e-r.io] [hardware]
 
 ## How to use?
-Install as any Arduino library. Go to File -> Examples -> SHT21_Arduino_Library -> *choose your example* and use! 
+Install as any Arduino library. Go to File -> Examples -> eRadionica_SHT21 -> *choose your example* and use! 
 
 ## License info
 This product is open-source. Yay!
@@ -22,3 +23,4 @@ If you find an Issue, please open one at GitHub. If you can improve our product,
 e-r.io Team.
 
 [breakout]: https://e-radionica.com/en/sht21-humidity-and-temperature-sensor.html
+[hardware]: https://github.com/e-radionicacom/SHT21-breakout-board-Eagle-files
