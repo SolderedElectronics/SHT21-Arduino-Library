@@ -23,7 +23,7 @@
 float SHT21::getHumidity(void) {
 	uint16_t result; 	// return variable
 	
-	result = readSensor_hm(TRIGGER_RH_MEASUREMENT_HM);
+	result = readSensor_hm(TRIGGER_RH_MEASUREMENT_NHM);
 
 	return CalcRH(result);
 }
@@ -31,7 +31,7 @@ float SHT21::getHumidity(void) {
 float SHT21::getTemperature(void) {
 	uint16_t result; 	// return variable
 	
-	result = readSensor_hm(TRIGGER_T_MEASUREMENT_HM);
+	result = readSensor_hm(TRIGGER_T_MEASUREMENT_NHM);
 
 	return CalcT(result);
 }
@@ -93,14 +93,22 @@ uint16_t SHT21::readSensor_hm(uint8_t command) {
 	uint8_t checksum;
 	uint8_t data[2];
 	uint16_t result;
-
+	uint8_t n = 0;
+	uint8_t d;
+	
+	if(command == TRIGGER_RH_MEASUREMENT_HM || command == TRIGGER_RH_MEASUREMENT_NHM) d = 30;
+	if(command == TRIGGER_T_MEASUREMENT_HM || command == TRIGGER_T_MEASUREMENT_NHM) d = 85;
+	
 	Wire.beginTransmission(I2C_ADD);
 	Wire.write(command);
 	Wire.endTransmission();
-
+	delay(d);
 	Wire.requestFrom(I2C_ADD,3);
+	
 	while(Wire.available() < 3) {
-		delayMicroseconds(85);
+		delay(10);
+		n++;
+		if(n>10) return 0;
 	}
 
 	data[0] = Wire.read(); 	// read data (MSB)
@@ -147,5 +155,3 @@ uint8_t SHT21::CRC_Checksum(uint8_t data[], uint8_t no_of_bytes, uint8_t checksu
  	 if (crc != checksum) return 1;
  	 else return 0;
 }
-
-
