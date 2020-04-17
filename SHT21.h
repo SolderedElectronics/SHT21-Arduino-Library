@@ -9,7 +9,7 @@
 //==============================================================================
 // Use with any SHT21 breakout. Check ours: 
 // https://e-radionica.com/en/sht21-humidity-and-temperature-sensor.html
-// If any questions, 
+// If any questions,  
 // just contact techsupport@e-radionica.com
 //==============================================================================
 
