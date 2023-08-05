@@ -20,8 +20,9 @@ This repo contains Arduino library for SHT21 sensor. It also includes two exampl
 
 Install as any Arduino library. Go to File -> Examples -> eRadionica_SHT21 -> _choose your example_ and use!
 
-You can use it for the Arduino IoT Cloud too, just go to Libraries -> Import -> and upload the library in .zip format without extract.
-Always up-to-date download of the library here: https://github.com/SolderedElectronics/SHT21-Arduino-Library/archive/refs/heads/master.zip
+You can use it for the Arduino IoT Cloud too, just go to Libraries -> Import -> _and upload the library in .zip format without extract_.
+
+_Always up-to-date download of the library here: https://github.com/SolderedElectronics/SHT21-Arduino-Library/archive/refs/heads/master.zip_
 
 ## License info
 
